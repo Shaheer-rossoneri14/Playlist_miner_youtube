@@ -2,7 +2,7 @@ import googleapiclient.discovery
 from urllib.parse import parse_qs, urlparse
 
 #extract playlist id from url
-url = input('Enter the YouTube playlist URL.')
+url = input('Enter the YouTube playlist URL: ')
 query = parse_qs(urlparse(url).query, keep_blank_values=True)
 playlist_id = query["list"][0]
 
